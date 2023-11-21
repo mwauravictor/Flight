@@ -1,5 +1,5 @@
 {
        "scripts": {
-          "build": "pip3 install pycairo"
+          "build": "sudo apt-get install libcairo2-dev libjpeg-dev libgif-dev"
       }
   }
