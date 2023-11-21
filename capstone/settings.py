@@ -78,22 +78,12 @@ WSGI_APPLICATION = 'capstone.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-#DATABASE_URL = 'postgresql://postgres:-Ge41GEbgFdA6552B6dA3CA4E52g-B5g@monorail.proxy.rlwy.net:15245/railway'
-#PGDATABASE = 'railway'
-#PGUSER = 'postgres'
-#PGPASSWORD = '-Ge41GEbgFdA6552B6dA3CA4E52g-B5g'
-#PGHOST = 'monorail.proxy.rlwy.net'
-#PGPORT = '15245'
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'URL': 'DATABASE_URL',
-        #'NAME': BASE_DIR / 'db.sqlite3',
-        'NAME': 'PGDATABASE',
-        'USER': 'PGUSER',
-        'PASSWORD': 'PGPASSWORD',
-        'HOST': 'PGHOST',
-        'PORT': 'PGPORT',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
